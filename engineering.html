@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Projects | Palakshi Rattan</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    /* Optional: Add a bit of extra layout styling just for this page */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1.5rem;
+    }
+
+    .project-content h3 {
+      margin-top: 0;
+    }
+
+    .upload-section {
+      margin-top: 1rem;
+    }
+
+    .upload-section input[type="file"] {
+      margin-top: 0.5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Engineering Projects</h1>
+    <p>Notes, files, and visuals from my engineering work and academic projects.</p>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </header>
+
+  <section>
+    <h2>Project Gallery</h2>
+    <div class="project-grid">
+      
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="images/pic01.jpg" alt="Embedded Systems Project">
+        <div class="project-content">
+          <h3>Embedded IoT Systems Project</h3>
+          <p>Designed and implemented a microcontroller-based system using sensors.</p>
+          <div class="upload-section">
+            <label for="pdf1">Upload related PDF report:</label>
+            <input type="file" id="pdf1" accept="application/pdf">
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project">
+        <img src="images/pic02.jpg" alt="Engineering Management">
+        <div class="project-content">
+          <h3>Engineering Management Notes</h3>
+          <p>Engineering notes from UCD Management Module.</p>
+          <div class="upload-section">
+            <label for="pdf2">Upload design or research paper:</label>
+            <input type="file" id="pdf2" accept="application/pdf">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
