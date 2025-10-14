@@ -1,2 +1,4 @@
-# myPortfolio
-A portfolio of my work to date
+# Heading 1 
+## Heading 2 
+### Heading 3 
+
