@@ -2286,8 +2286,9 @@ html, body {
 
 /* Absolute global font override */
 * {
-  font-family: "Times New Roman", Times, serif !important;
+  font-family: "Playfair Display", Arial, sans-serif !important;
 }
+
 
 
 
