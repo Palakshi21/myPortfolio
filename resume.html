@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!-- Interactive Resume – styled to match your HTML5 UP Editorial theme -->
+<html>
+<head>
+  <title>Palakshi Rattan – Interactive Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+  <!-- Main Editorial CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Google Font (same as your site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Resume container */
+    .resume-section {
+      background-color: #fdf8f3;
+      padding: 50px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .resume-title {
+      color: #501370;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .resume-subtitle {
+      color: #202020;
+      font-size: 1.1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Accordion styling */
+    .accordion {
+      border-top: 1px solid #ddd;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-header {
+      cursor: pointer;
+      padding: 1rem 0;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #501370;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-content {
+      display: none;
+      padding-bottom: 1.5rem;
+      color: #202020;
+      line-height: 1.8;
+    }
+
+    .accordion-header span {
+      font-size: 1.3rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #501370;
+      padding-left: 20px;
+      margin-top: 1rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-item h4 {
+      margin: 0;
+      color: #501370;
+    }
+
+    /* Skills */
+    .skill {
+      margin-bottom: 1.2rem;
+    }
+
+    .skill-bar {
+      background: #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 10px;
+      margin-top: 5px;
+    }
+
+    .skill-level {
+      background: #501370;
+      height: 100%;
+    }
+
+    /* Download button */
+    .download-btn {
+      display: inline-block;
+      margin-top: 2.5rem;
+      padding: 12px 24px;
+      background-color: #501370;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .download-btn:hover {
+      background-color: #3e0f57;
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+
+      <section class="resume-section">
+
+        <h1 class="resume-title">Palakshi Rattan</h1>
+        <p class="resume-subtitle">
+          Electronic Engineering Graduate · Technology Integration Analyst · Interested in AI & Digital Transformation
+        </p>
+
+        <!-- Accordion Resume Sections -->
+        <div class="accordion">
+
+          <!-- Experience -->
+          <div class="accordion-item">
+            <div class="accordion-header">Professional Experience <span>+</span></div>
+            <div class="accordion-content">
+              <h4>Analyst – Technology Integration Architecture</h4>
+              <p><strong>Accenture</strong> · 2024 – Present</p>
+              <ul>
+                <li>Worked on enterprise digital transformation projects</li>
+                <li>Supported system integration and architecture design</li>
+                <li>Collaborated with cross‑functional engineering teams</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="accordion-item">
+            <div class="accordion-header">Education <span>+</span></div>
+            <div class="accordion-content">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h4>Bachelor of Engineering (Honours) – Electronic Engineering</h4>
+                  <p>University College Dublin · 2020 – 2024</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="accordion-item">
+            <div class="accordion-header">Skills <span>+</span></div>
+            <div class="accordion-content">
+
+              <div class="skill">
+                Python
+                <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+              </div>
+
+              <div class="skill">
+                Digital Transformation
+                <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+              </div>
+
+              <div class="skill">
+                System Architecture
+                <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Interests -->
+          <div class="accordion-item">
+            <div class="accordion-header">Interests <span>+</span></div>
+            <div class="accordion-content">
+              <p>Artificial Intelligence, Digital Transformation, Writing, Film, Travel, Emerging Technologies.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Download Resume -->
+        <a href="Palakshi_Rattan_CV.pdf" class="download-btn" target="_blank">Download PDF Resume</a>
+
+      </section>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- Scripts (same as your template) -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Accordion Logic -->
+<script>
+  const headers = document.querySelectorAll('.accordion-header');
+
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const open = content.style.display === 'block';
+
+      document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+      document.querySelectorAll('.accordion-header span').forEach(s => s.textContent = '+');
+
+      if (!open) {
+        content.style.display = 'block';
+        header.querySelector('span').textContent = '–';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
