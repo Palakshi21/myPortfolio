@@ -2289,6 +2289,22 @@ html, body {
   font-family: "Playfair Display", Arial, sans-serif !important;
 }
 
+/* Travel / Post thumbnail sizing */
+.travel-thumb {
+  height: 220px;          /* controls vertical size */
+  overflow: hidden;
+  border-radius: 6px;    /* optional: soft corners */
+}
+
+.travel-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* crops instead of stretching */
+  display: block;
+}
+
+
+
 
 
 
